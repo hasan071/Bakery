@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: aliceblue;
+    background-color: burlywood;
+}
+
+.mainContainer {
+    width: 100%;
+}
+
+.mainContainer .head {
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(227, 227, 227);
+}
+
+.mainContainer .head .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+.mainContainer .head .header .logo {
+    width: 20%;
+}
+
+.mainContainer .head .header .logo img {
+    width: 100%;
+    padding: 5% 30%;
+}
+
+.mainContainer .head .header ul {
+    width: 55%;
+    /* padding: 2%; */
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.mainContainer .head .header ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.mainContainer .head .header ul li a {
+    width: 50%;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10% 5%;
+    transition: 0.5s;
+}
+
+.mainContainer .head .header ul li a:hover,
+.mainContainer .head .header ul .active a {
+    color: burlywood;
+    border-top: 3px solid burlywood;
+    /* background-color: burlywood; */
+}
+
+.mainContainer .head .header ul li a:hover {
+    border-top: 3px solid burlywood;
+}
+
+.mainContainer .head .data {
+    margin-top: 2%;
+}
+
+.mainContainer .head .data h1 {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-family: cursive;
+    margin-bottom: 1%;
+}
+
+.mainContainer .head .data p {
+    color: black;
+    font-family: cursive;
+    text-align: center;
+}
+
+.mainContainer .gallery {
+    width: 100%;
+    margin: 3% 0%;
+}
+
+.mainContainer .gallery .images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .gallery .images .image {
+    width: 25%;
+    height: 50vh;
+    background-image: url(../../assets/images/alexandru-stavrica.jpg);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    margin: 0.1% 0.1%;
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+.mainContainer .gallery .images .image:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.mainContainer .gallery .images .image .hover {
+    width: 100%;
+    height: 40vh;
+    color: aliceblue;
+    background-color: rgba(80, 80, 80, 0.597);
+    display: none;
+}
+
+.mainContainer .gallery .images .image .hover .fa-solid {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .gallery .images .image:hover .hover {
+    display: block;
+}
+
+
+.mainContainer .footer {
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1;
+    padding: 3% 8%;
+}
+
+.mainContainer .footer .foot p {
+    color: aliceblue;
+    font-family: cursive;
+    opacity: 0.4;
+}
+
+.mainContainer .footer .foot h3 {
+    font-family: cursive;
+    color: aliceblue;
+}
+
+.mainContainer .footer .foot table {
+    width: 100%;
+    height: 20vh;
+}
+
+.mainContainer .footer .foot table tr td {
+    color: aliceblue;
+    font-family: cursive;
+    opacity: 0.4;
+}
+
+.mainContainer .footer .foot .contactDetails {
+    width: 100%;
+    height: 22vh;
+    background-image: url(../images/contact-details-map.png);
+    background-size: 100% 100%;
+}
+
+.mainContainer .underFooter {
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    padding: 3% 0%;
+}
+
+.mainContainer .underFooter .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.mainContainer .underFooter .words {
+    color: rgb(118, 117, 117);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.mainContainer .underFooter .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainContainer .underFooter .icons a {
+    border-radius: 50%;
+    color: rgb(118, 117, 117);
+    background-color: rgb(79, 79, 79);
+    padding: 0.5%;
+}
+
+.mainContainer .underFooter .icons a img {
+    width: 100%;
+    height: 10vh;
+}
+
+.mainContainer .underFooter .icons .f:hover {
+    color: aliceblue;
+    background-color: dodgerblue;
+}
+
+.mainContainer .underFooter .icons .g:hover {
+    color: aliceblue;
+    background-color: rgb(248, 84, 117);
+}
+
+.mainContainer .underFooter .icons .l:hover {
+    color: aliceblue;
+    background-color: dodgerblue;
+}
+.mainContainer .underFooter .icons .t:hover {
+    color: aliceblue;
+    background-color: deepskyblue;
+}
+
+
+.mainContainer .head .header input,
+.mainContainer .head .header label i {
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .mainContainer .gallery .images {
+        flex-wrap: wrap;
+    }
+    .mainContainer .gallery .images .image {
+        width: 46%;
+        margin-bottom: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 1000px){
+    .mainContainer .head .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        background-color: aliceblue;
+    }
+    .mainContainer .head .header .logo {
+    width: 90%;
+    }
+    .mainContainer .head .header ul {
+        width: 50%;
+        background-color: black;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 4vh 0%;
+        border-radius: 20px;
+        transition: 1s;
+        transform-origin: top;
+        transform: rotateX(90deg);
+        margin-top: 28%;
+    }
+    .mainContainer .head .header ul li {
+        width: 50%;
+        margin-top: 3%;
+    }
+    .mainContainer .head .header ul li a,
+    .mainContainer .head .header ul li .active a {
+        font-size: 20px;
+        color: aliceblue;
+        padding: 2%;
+    }
+    .mainContainer .head .header label i {
+        display: flex;
+        font-size: 40px;
+        align-items: flex-start;
+    }
+    .mainContainer .head .header input:checked ~ ul {
+        transform: rotateX(0deg);
+    }
+    .mainContainer .head .data {
+        margin-top: 3%;
+    }
+    .mainContainer .head .data p,
+    .mainContainer .head .data .buttons {
+    font-size: 20px;
+    }
+    .mainContainer .head .data .buttons .button1,
+    .mainContainer .head .data .buttons .button2 {
+        width: 30%;
+    }
+    .mainContainer .gallery .images {
+        flex-wrap: wrap;
+    }
+    .mainContainer .gallery .images .image {
+        width: 90%;
+    }
+    .mainContainer .footer {
+        flex-wrap: wrap;
+    }
+    .mainContainer .footer .foot {
+        width: 47%;
+        margin-right: 3%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .mainContainer .head .header .logo {
+    width: 100%;
+    }
+    .mainContainer .head .header ul {
+        margin-top: 50%;
+    }
+    .mainContainer .footer {
+    flex-wrap: wrap;
+    }
+    .mainContainer .footer .foot {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+}
